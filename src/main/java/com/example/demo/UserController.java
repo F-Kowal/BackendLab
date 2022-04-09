@@ -27,6 +27,7 @@ public class UserController {
     @PostConstruct
     private void onCreate() {
         users.put(1L, new UserEntity(1L, "Filip"));
+        users.put(2L, new UserEntity(2L, "Filip2"));
     }
 
     @RequestMapping("/users/{id}/get")
